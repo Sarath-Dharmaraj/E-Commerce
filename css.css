@@ -9,38 +9,35 @@
 }
 #header-container{
     display: flex;
-    vertical-align: middle;
     height:40px;
 }
 #header-address{
-    margin-left: 2%;
-    width: 20%;
+    margin-left: 20PX;
     color: black;
-}
-#search-icon,#search-box,#search-disabled-button,#logo-header-tool-image{
-    height: 30px;
-    border: 0cap;
-    margin: 0.45% 0px;
-}
-#logo-header-tool-image{
-    margin-left: 1%;
-    vertical-align: middle;
-    
 }
 #toolbar-header{
   display: flex;
   gap: 0px;
-  margin-top: 0.35%;
+}
+#search-icon,#search-box,#search-disabled-button,#logo-header-tool-image{
+    height: 30px;
+    border: 0cap;
+    margin: 5px 0px;
+}
+#logo-header-tool-image{
+    margin-left: 10px;
+    
 }
 #search-icon{
-    margin-left: 10%;
+    margin-left: 30px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
 #search-box{
+    height: 30px;
     text-align: center;
     vertical-align: middle;
-    width: 100%;
+    width: 70%;
 }
 #search-disabled-button{
     border-top-right-radius: 50%;
@@ -48,20 +45,4 @@
 }
 #search-box:focus{
     outline: none;
-}
-#languages{
-    font-size: larger;
-    margin: 0.5% 0px 0px 1%;
-    height: 31px;
-    border-radius: 20%;
-    background-color: hsla(0, 0%, 0%, 0);
-    border: 0cap;
-}
-#languages:focus{
-    outline: none;
-}
-#sign-in,#sign-up{
-    margin-left: 5%;
-    width: 10%;
-    border-radius: 15%;
 }
