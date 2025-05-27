@@ -1,67 +1,83 @@
-* {
+body {
     margin: 0;
+    max-width: 100%;
     box-sizing: border-box;
-}#logo-header-image{
+    font-family: "Audiowide", monospace;
+}#header-logo-image{
     width: 8%;
     margin: 0px;
     border: 0cap;
     vertical-align: middle;
 }
 #header-container{
+    background-color: #002147;
+    color: lightgray;
     display: flex;
-    vertical-align: middle;
-    height:40px;
+    align-items: center;
+    height:50px;
+    max-width: 100%; 
 }
-#header-address{
-    margin-left: 2%;
-    width: 20%;
-    color: black;
+#header-container-3dot{     
+   
+    height: 100%; 
+    width: 5%;
+    font-size: x-large;
+    color: lightgrey; 
+    background-color: transparent;
 }
-#search-icon,#search-box,#search-disabled-button,#logo-header-tool-image{
-    height: 30px;
-    border: 0cap;
-    margin: 0.45% 0px;
+#header-container-address{
+    display: flex;
+    margin-left: 2.5%; 
+    align-items: center;
 }
-#logo-header-tool-image{
-    margin-left: 1%;
-    vertical-align: middle;
-    
+#header-container-search{
+    display: flex;
+    gap: 0px;
+    height: 65%;
+    margin-left: 2.5%;
 }
-#toolbar-header{
-  display: flex;
-  gap: 0px;
-  margin-top: 0.35%;
-}
-#search-icon{
-    margin-left: 10%;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-}
-#search-box{
+#header-container-search-box{
+    border: 0px; 
+    width: 585px;
+    border-bottom-left-radius: 25px ;
+    border-top-left-radius: 25px;
     text-align: center;
-    vertical-align: middle;
-    width: 100%;
 }
-#search-disabled-button{
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+#header-container-search-box:focus{
+    outline: 1px solid gold;
+    outline-offset: 2px;
 }
-#search-box:focus{
+#header-container-search-icon{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 0;
+    font-size: large;
+    color: #002147;
+    background-color: gold;
+    width: 50px;
+}
+#header-container-lang-selection{
+    font-size: large;
+    margin-left: 2.5%;
+    height: 55%; 
+    border-radius: 5px;
+}
+#header-container-lang-selection:focus{
     outline: none;
 }
-#languages{
-    font-size: larger;
-    margin: 0.5% 0px 0px 1%;
-    height: 31px;
-    border-radius: 20%;
-    background-color: hsla(0, 0%, 0%, 0);
-    border: 0cap;
+#header-container-cart{
+    all: unset;
+    margin-left: 2.5%; 
+    height: 55%; 
+    font-size: x-large;
+    color: lightgrey; 
+    background-color: transparent;
 }
-#languages:focus{
-    outline: none;
-}
-#sign-in,#sign-up{
-    margin-left: 5%;
-    width: 10%;
-    border-radius: 15%;
+#header-container-login{
+    all: unset;
+    margin-left: 2.5%; 
+    height: 55%; 
+    font-size: x-large;
+    color: lightgrey; 
+    background-color: transparent;
 }
