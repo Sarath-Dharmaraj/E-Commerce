@@ -1,20 +1,28 @@
 body {
     margin: 0;
     max-width: 100%;
-    box-sizing: border-box;
+
     font-family: "Audiowide", monospace;
-}#header-logo-image{
+}
+/* header - section 1 */
+#header-top-image{
     width: 8%;
-    margin: 0px;
     border: 0cap;
     vertical-align: middle;
 }
+#header-top-dealer,#header-top-customercare{
+    color: black;
+    font-weight:500;
+    font-size: larger; 
+}
+/* header - section 2 */
 #header-container{
     background-color: #002147;
     color: lightgray;
     display: flex;
     align-items: center;
-    height:50px;
+    position: fixed;
+    z-index: 5;
     max-width: 100%; 
 }
 #header-container-3dot{     
@@ -80,4 +88,49 @@ body {
     font-size: x-large;
     color: lightgrey; 
     background-color: transparent;
+}
+/* dicound - div element */
+#discount{
+    background-color: skyblue; 
+    height: 500px; 
+    color: black;  
+    margin-top: 50px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 2.5%;
+    max-width: 100%;
+    background-image: url(discount-1.jpg); 
+    background-size: cover;
+}
+#discount::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+    backdrop-filter: blur(30px);
+}
+#discount-img-1{
+    position: absolute;
+    height: 60% !important;
+    width: auto !important;
+    z-index: 2;
+}
+#discount-img-2{
+    position: absolute;
+    left: 2.5%;
+    height: 30% !important;
+    width: auto !important;
+    z-index: 1;
+}
+#discount-img-3{
+   position: absolute;
+    right: 2.5%;
+    height: 30% !important;
+    width: auto !important;
+    z-index: 1;
+}
+#discount img{
+    border: 2px solid black;
 }

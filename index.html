@@ -8,11 +8,13 @@
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     </head>
     <body>
-        <header style="background-color:white; color: white;">
-                    <div id="header-logo">
-                        <img id="header-logo-image" src="Electric.png" alt="Logo">
-                    </div>
-                    <div id="header-container">
+        <header style="background-color:white; color: white; display:">
+                    <section id="header-top" style="display: flex; align-items:center;">
+                        <img id="header-top-image" src="Electric.png" alt="Logo">
+                        <i id="header-top-dealer" class="bi bi-shop" style="margin-left: auto;"> dealer</i>
+                        <i id="header-top-customercare" class="bi bi-headset" style="margin: 0 2.5% 0 2.5%;"> customer care</i>
+                    </section>
+                    <section id="header-container">
                         <button id="header-container-3dot"><i class="bi bi-three-dots-vertical"></i></button>
                         <img id="header-container-image" src="Electric.png" alt="Logo" style="width: 6.5% ;margin: 5px;">
                         <div id="header-container-address">
@@ -23,7 +25,6 @@
                             </div>
                         </div>
                         <div id="header-container-search">
-                            <!--<button id="header-container-search-disabled-button" style="background-color: rgb(253, 253, 253);" disabled><i class="bi bi-airplane-fill" style="background-color: rgb(253, 254, 255); color: rgb(252, 254, 255);"></i></button> -->
                             <input type="text" id="header-container-search-box" placeholder="Search...">
                             <button id="header-container-search-icon"><i class="bi bi-search" ></i></button>
                         </div>
@@ -33,14 +34,18 @@
                             <option value="option2">tam</option>
                             <option value="option3">spa</option>
                         </select>
-                        <button id="header-container-cart" style="" ><i class="bi bi-cart3"></i> cart</button>
+                        <button id="header-container-cart"><i class="bi bi-cart3"></i> cart</button>
                         <button id="header-container-login"><i class="bi bi-person-circle"></i> login</button>
-                    </div>
-        </header>  
+                    </section>
+        </header>
+        <section id="discount" style="">
+            <img id="discount-img-1" src="discount-1.jpg">
+            <img id="discount-img-2" src="discount-2.jpeg">
+            <img id="discount-img-3" src="Electric.png">
+        </section>
+    
         <!--
-        <div style="background-color:brown ;">
-            discount
-        </div>
+       
         <div style="background-color:blue;">
             slide
         </div>
